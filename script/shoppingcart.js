@@ -113,7 +113,7 @@ order.onclick = function () {
     alert("Giỏ hàng trống!");
   }
   else {
-    window.location="payment.html";
+    alert("Thanh toán thành công!");
   }
 }
 window.onclick = function (event) {
