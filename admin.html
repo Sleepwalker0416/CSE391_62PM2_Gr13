@@ -45,6 +45,10 @@
                     <td>
                         <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
                                 aria-hidden="true"></i></a>
+
+                        <a href="" data-toggle="modal" data-target="#modelId">
+                            <i class="fa fa-calculator" aria-hidden="true"></i>
+                        </a>
                     </td>
                 </tr>
                 <tr>
@@ -57,6 +61,9 @@
                     <td>
                         <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
                                 aria-hidden="true"></i></a>
+                        <a href="" data-toggle="modal" data-target="#modelId">
+                            <i class="fa fa-calculator" aria-hidden="true"></i>
+                        </a>
                     </td>
                 </tr>
 
@@ -71,6 +78,9 @@
                     <td>
                         <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
                                 aria-hidden="true"></i></a>
+                        <a href="" data-toggle="modal" data-target="#modelId">
+                            <i class="fa fa-calculator" aria-hidden="true"></i>
+                        </a>
                     </td>
                 </tr>
                 
@@ -84,6 +94,9 @@
                     <td>
                         <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
                                 aria-hidden="true"></i></a>
+                        <a href="" data-toggle="modal" data-target="#modelId">
+                            <i class="fa fa-calculator" aria-hidden="true"></i>
+                        </a>
                     </td>
                 </tr>
             </tbody>
@@ -110,6 +123,36 @@
             </div>
         </div>
     </div>
+
+    
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Thông tin hoá đơn</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Tên món ăn: Món ăn 1</p>
+                    <p>Đơn giá: 100.000 đ</p>
+                    <p>Số lượng: 1</p>
+                    <h3>Tổng: 100.000 đ</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $('#exampleModal').on('show.bs.modal', event => {
+            var button = $(event.relatedTarget);
+            var modal = $(this);
+            // Use above variables to manipulate the DOM
+            
+        });
+    </script>
+
     <script src="jquery.min.js"></script>
     <script type="text/javascript">
       
