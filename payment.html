@@ -67,30 +67,35 @@
                             <h1>Thông tin thanh toán</h1>
                         </div>
                         <form action="">
-                            <div class="row">
+                            <div class="row1">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="menu-item">
-                                        <label for="time">Tên khách đặt:</label>
-                                        <input name="name" id="name" type="text" placeholder="Nhập tên khách đặt" class="form-input" required>
+                                        <label for="guest">Tên khách đặt:</label>
+                                        <input name="guest" id="guest" type="text" placeholder="Nhập tên khách đặt" class="form-input" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="menu-item">
-                                        <label for="guest">Địa chỉ:</label>
-                                        <input name="name" id="name" type="text" placeholder="Nhập địa chỉ" class="form-input" required>
+                                        <label for="address">Địa chỉ:</label>
+                                        <input name="address" id="address" type="text" placeholder="Nhập địa chỉ" class="form-input" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row2">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="menu-item">
+                                        <label for="number">Số điện thoại:</label>
+                                        <input name="number" id="number" type="tel" placeholder="Nhập số điện thoại" class="form-input" required>
+                                    </div>
+                                </div>               
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="menu-item">
+                                        <label for="email">Email:</label>
+                                        <input name="email" id="email" type="email" placeholder="Nhập email" class="form-input" required>
                                     </div>
                                 </div>
                             </div>
                         </form>
-                         <div class="row">
-                             <div class="col-lg-6 col-md-6">
-                                <div class="menu-item">
-                                    <label for="comment">Số điện thoại:</label>
-                                    <input name="name" id="name" type="tel" placeholder="Nhập số điện thoại" class="form-input" required>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -104,27 +109,12 @@
                     <th>Số lượng</th>
                     <th>Thành tiền</th>
                 </tr>
-        
-                <tr>
-                    <th>Tên món 1</th>
-                    <th>Đơn giá 1</th>
-                    <th>1</th>
-                    <th>100.000 đ</th>
-                </tr>
-        
-                <tr>
-                    <th>Tên món 2</th>
-                    <th>Đơn giá 2</th>
-                    <th>2</th>
-                    <th>200.000 đ</th>
-                </tr>
-    
             </table>
         </div>
     
         <div class="total">
             <p>Tổng: </p>
-            <p>300.000 đ</p>
+            <p>0VNĐ</p>
         </div>
     
         <div class="reservation-banner">
@@ -213,5 +203,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script/transfer_data.js"></script>
 </body>
 </html>
