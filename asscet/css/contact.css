@@ -88,205 +88,52 @@ html {
     box-shadow: none;
 }
 
-
-/* Slide */
-
-.carousel-inner {
-    min-width: 100vh;
-    height: 700px;
-}
-
-/*  */
-
-.container .row {
-    width: 90%;
-    margin: auto;
-}
-
-#container2 .row {
-    width: 85%;
-    margin: auto;
-}
-
-#container3 .row {
-    width: 85%;
-    margin: auto;
-}
-
-
-/* Container1 */
-
-.order {
-    padding-bottom: 70px;
-}
-
-#container1 h2 {
-    font-size: 40px;
-    font-weight: 600;
-    font-family: "Roboto Slab", sans-serif;
-}
-
-#container1 p {
-    font-size: 20px;
-    color: #808080;
-    line-height: 1;
-    margin: 20px 0 30px 0px;
-}
-
-#title-con1 {
-    margin-top: 100px;
-    text-align: center;
-}
-
-#container1 .top-menu .card {
-    height: 300px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-#container1 .top-menu .card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: 0.3s ease;
-}
-
-.top-menu .card:hover img {
-    transform: scale(1.1);
-}
-
-.sale-off {
-    background-color: #f4f7fb;
-    padding-bottom: 60px;
-}
-
-#txt-con2 {
-    padding-top: 50px;
-    padding-bottom: 70px;
-    text-align: center;
-}
-
-#txt-con2 h2 {
-    font-size: 40px;
-    font-weight: 600;
-    font-family: "Roboto Slab", sans-serif;
-}
-
-#img-product-con2 img {
-    width: 100%;
-}
-
-#img-product-con2:hover img {
-    transform: scale(0.9);
-    transition: 0.5s;
-}
-
-.food_section {
-    padding-bottom: 100px;
-}
-
-.food_section .heading_container {
-    text-align: center;
+/* Contact */
+.content {
     margin-top: 150px;
-    margin-bottom: 35px;
-}
-
-.food_section h2 {
-    font-size: 40px;
-    font-weight: 600;
-    font-family: "Roboto Slab", sans-serif;
-}
-
-.food_section .box {
     position: relative;
-    margin-top: 25px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    color: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    background: linear-gradient(to bottom, #f1f2f3 25px, #e3e6ea 25px);
 }
 
-.food_section .box .img-box {
-    background: #f1f2f3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    border-radius: 0 0 0 45px;
-    margin: -1px;
-    padding: 25px;
+.content .container {
+    width: 75%;
+    margin: auto;
 }
 
-.food_section .box .img-box img {
-    max-width: 100%;
-    max-height: 145px;
-    -webkit-transition: all .2s;
-    transition: all .2s;
+
+.section-heading {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    text-align: center;
 }
 
-.food_section .box .detail-box {
-    padding: 25px;
-    font-family: "Roboto Slab", sans-serif;
-    color: #000;
+.content .form_container .form-control {
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    border: 1px solid #999;
+    outline: none;
+    color: #000000;
+    border-radius: 5px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
-.food_section .box .detail-box h5 {
-    font-weight: 600;
-    padding-bottom: 10px;
+.content .form_container .form-control::placeholder {
+    color: #222222;
 }
 
-.food_section .box .detail-box p {
-    font-size: 15px;
-}
 
-.food_section .box .detail-box h6 {
-    margin-top: 10px;
-}
 
-.food_section .box .options {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-between;
-}
-
-.food_section .box .options a {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: #ffbe33;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.food_section .box .options a svg {
-    width: 18px;
-    height: auto;
-    fill: #ffffff;
-}
-
-.food_section .box:hover .img-box img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.food_section .btn-box {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-}
-
-.food_section .btn-box a {
-    font-size: 20px;
-    text-decoration: none;
+.content .form_container button {
+    margin-top: 15px;
+    border: none;
+    text-transform: uppercase;
     display: inline-block;
-    padding: 20px 65px;
+    padding: 10px 55px;
     background-color: #ffbe33;
     color: #ffffff;
     border-radius: 45px;
@@ -295,10 +142,24 @@ html {
     border: none;
 }
 
-.food_section .btn-box a:hover {
+.content .form_container button:hover {
     background-color: #e69c00;
 }
 
+.img-map {
+    width: 100%;
+    max-height: 350px;
+}
+
+.row p {
+    padding-top: 20px;
+}
+
+
+
+
+
+/*  */
 .end-of-body {
     text-align: center;
     justify-content: center;
