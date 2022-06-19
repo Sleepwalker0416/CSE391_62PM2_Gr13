@@ -88,6 +88,32 @@ html {
     box-shadow: none;
 }
 
+.page-banner
+{
+    padding: 300px 0 150px;
+    background: url("../img/page-banner.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.page-banner h1
+{
+    color: #fff;
+    font-size: 50px;
+}
+
+.page-banner p
+{
+    font-size: 22px;
+    color: #999999;
+}
+
+.page-banner h1,
+.page-banner p
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
 /* Contact */
 .content {
     margin-top: 150px;
