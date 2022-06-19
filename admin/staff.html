@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 16%;
+  background-color: #e9d8f4;
+  position: fixed;
+  height: 150%;
+  overflow: auto;
+}
+
+li a {
+   display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #58257b;
+  font-weight: bold;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #db7093;
+  font-weight: bold;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2 style="font-size: 250%; color: greenyellow;">FoodLove♥</h2>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HÓA ĐƠN MUA HÀNG</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2" style="margin: 0; padding: 0">
+
+ <ul>
+    <li><a class="active" href="dashboard.html">Trang chủ</a></li>
+    <li><a href="bill.html">Hóa đơn</a></li>
+    <li><a href="product.html">Thống kê</a></li>
+    <li><a href="staff.html">Nhân viên</a></li>
+ </ul>
+            </div>
+            <div class="col-lg-10">
+                <h1 style="text-align:center;color:blue" >Quản lý nhân viên</h1>
+                <table class="table table-bordered" id="myTable">
+                    <thead>
+                        <tr class="ex">
+                            <th style="background-color: blanchedalmond; font-style: initial;" font-size: large;>Tên nhân viên</th>
+                            <th style="background-color: blanchedalmond; font-style: initial;" font-size: large;>Giới tính</th>
+                            <th style="background-color: blanchedalmond; font-style: initial;" font-size: large;>Ngày sinh</th>
+                            <th style="background-color: blanchedalmond; font-style: initial;" font-size: large;>Số điện thoại</th>
+                            <th style="background-color: blanchedalmond; font-style: initial;" font-size: large;>Chức vụ</th>
+                            <th width="5px; !important" style="background-color: blanchedalmond; font-style: initial;" font-size: large;>Tính Năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NV1</td>
+                            <td>Nam</td>
+                            <td>10/10/2000</td>
+                            <td>0987654321</td>
+                            <td>admin</td>
+                            <td>
+                                <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                        aria-hidden="true"></i></a>
+        
+                                 <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                         aria-hidden="true"></i></a>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NV2</td>
+                            <td>Nữ</td>
+                            <td>15/1/2003</td>
+                            <td>0987654321</td>
+                            <td>Đầu bếp</td>
+                            <td>
+                                <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                </a>
+                            </td>
+                        </tr>
+        
+                       
+                        <tr>
+                            <td>NV3</td>
+                            <td>Nữ</td>
+                            <td>16/05/2002</td>
+                            <td>0987654321</td>
+                            <td>Thu ngân</td>
+                            <td>
+                                <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                        aria-hidden="true"></i></a>
+                                 <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                </a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NV4</td>
+                            <td>Nam</td>
+                            <td>10/10/2000</td>
+                            <td>0987654321</td>
+                            <td>Phục vụ</td>
+                            <td>
+                                <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                        aria-hidden="true"></i></a>
+                                 <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="pageNavPosition" class="text-right"></div>
+                <script type="text/javascript">
+                    var pager = new Pager('myTable', 5);
+                    pager.init();
+                    pager.showPageNav('pager', 'pageNavPosition');
+                    pager.showPage(1);
+                </script>
+            </div>
+            <hr class="hr1">
+            <div class="container-fluid end">
+                <div class="row text-center">
+                    <div class="col-lg-12 link">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="col-lg-12">
+                    
+                    </div>
+                </div>
+            </div>
+        
+    
+    <script>
+        $('#exampleModal').on('show.bs.modal', event => {
+            var button = $(event.relatedTarget);
+            var modal = $(this);
+          
+        });
+    </script>
+
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+      
+       // Sửa
+       $(document).on("click", ".edit", function () {
+                $(this).parents("tr").find("td:not(:last-child)").each(function () {
+                    $(this).html('<input type="text" class="form-control" value="' + $(this)
+                        .text() + '">');
+                });
+                $(this).parents("tr").find(".add, .edit").toggle();
+                $(".add-new").attr("disabled", "disabled");
+            });
+            jQuery(function () {
+                jQuery(".add").click(function () {
+                    swal("Thành Công!", "Bạn Đã Sửa Thành Công", "success");
+                });
+            });
+            // Xóa
+            $(document).on("click", ".delete", function () {
+                $(this).parents("tr").remove();
+                swal("Thành Công!", "Bạn Đã Xóa Thành Công", "success");
+                $(".add-new").removeAttr("disabled");
+            });
+     
+        //Not use
+        jQuery(function () {
+            jQuery(".cog").click(function () {
+                swal("Sorry!", "Tính Năng Này Chưa Có", "error");
+            });
+        });
+        //Tool tip
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+</body>
+</html>
