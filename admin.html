@@ -206,14 +206,6 @@
                                       pager.showPage(1);
                                   </script>
                               </div>
-                              <hr class="hr1">
-                              <div class="container-fluid end">
-                                  <div class="row text-center">
-                                      <div class="col-lg-12 link">
-                                          <i class="fab fa-facebook-f"></i>
-                                          <i class="fab fa-twitter"></i>
-                                          <i class="fab fa-pinterest-p"></i>
-                                          <i class="fab fa-instagram"></i>
                                       </div>
                                       <div class="col-lg-12">
                                       
@@ -278,9 +270,108 @@
                               </div>
                           </div>
                       </div>
-                  
-                  
                       
+             <div class="dash-content">
+                  <div class="overview">
+                       <div class="title">
+                          <i class="uil uil-chart"></i>
+                             <span class="text">Analytics</span>
+                </div>
+                        <body>
+                            <img src="./asscet/img/analytics.png" height="250%" width="100%" alt="" />
+                        </body>
+
+                        <div class="dash-content">
+                            <div class="overview">
+                                <div class="title">
+                                    <i class="uil uil-user"></i>
+                                    <span class="text">Staff</span>
+                                </div>
+                                <body>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <table class="table table-bordered" id="myTable">
+                                                    <thead>
+                                                        <tr class="ex">
+                                                            <th style="background-color:  rgb(114, 236, 241); font-style: initial;" font-size: large;>Tên nhân viên</th>
+                                                            <th style="background-color:  rgb(114, 236, 241); font-style: initial;" font-size: large;>Giới tính</th>
+                                                            <th style="background-color:  rgb(114, 236, 241); font-style: initial;" font-size: large;>Email</th>
+                                                            <th style="background-color:  rgb(114, 236, 241); font-style: initial;" font-size: large;>Số điện thoại</th>
+                                                            <th style="background-color:  rgb(114, 236, 241); font-style: initial;" font-size: large;>Chức vụ</th>
+                                                            <th width="5px; !important" style="background-color:  rgb(114, 236, 241); font-style: initial;" font-size: large;>Tính Năng</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nv1</td>
+                                                            <td>Nam</td>
+                                                            <td>Nv1@gmail.com</td>
+                                                            <td>0987654321</td>
+                                                            <td>Admin</td>
+                                                            <td>
+                                                                <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                                                        aria-hidden="true"></i></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nv2</td>
+                                                            <td>Nam</td>
+                                                            <td>Nv2@gmail.com</td>
+                                                            <td>0987654321</td>
+                                                            <td>Phục vụ</td>
+                                                            <td>
+                                                                <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                                                        aria-hidden="true"></i></a> 
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                       
+                                                        <tr>
+                                                            <td>Nv3</td>
+                                                            <td>Nữ</td>
+                                                            <td>Nv3@gmail.com</td>
+                                                            <td>0987654321</td>
+                                                            <td>Thu ngân</td>
+                                                            <td>
+                                                                <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                                                    aria-hidden="true"></i></a>            
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td>Nv4</td>
+                                                            <td>Nam</td>
+                                                            <td>Nv4@gmail.com</td>
+                                                            <td>0987654321</td>
+                                                            <td>Đầu bếp</td>
+                                                            <td>
+                                                                <a class="delete" title="Xóa" data-toggle="tooltip"><i class="fa fa-trash-o"
+                                                                        aria-hidden="true"></i></a>
+                                                                   
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div id="pageNavPosition" class="text-right"></div>
+                                                <script type="text/javascript">
+                                                    var pager = new Pager('myTable', 6);
+                                                    pager.init();
+                                                    pager.showPageNav('pager', 'pageNavPosition');
+                                                    pager.showPage(1);
+                                                </script>
+
+                        <hr class="hr1">
+                        <div class="container-fluid end">
+                            <div class="row text-center">
+                                <div class="col-lg-12 link">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-pinterest-p"></i>
+                                    <i class="fab fa-instagram"></i>
                       <script>
                           $('#exampleModal').on('show.bs.modal', event => {
                               var button = $(event.relatedTarget);
@@ -291,7 +382,7 @@
                   
                       <script src="jquery.min.js"></script>
                       <script type="text/javascript">
-                        
+                     
                               // Xóa
                               $(document).on("click", ".delete", function () {
                                   $(this).parents("tr").remove();
